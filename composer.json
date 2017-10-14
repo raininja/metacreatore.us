@@ -1,0 +1,34 @@
+{
+    "name"        : "raininja/mainelybudz.us",
+    "description" : "portfolio dev for metacreatore  via Composer",
+    "authors"     : [
+        {
+            "name"    : "Dan Denkijin",
+            "email"   : "dandenkijin@gmail.com",
+            "homepage": "https://denki.ninja/"
+        }
+    ],
+    "type"        : "project",
+    "repositories": [
+        {
+            "type": "composer",
+            "url" : "http://wpackagist.org"
+        }
+    ],
+    "config"      : {
+        "vendor-dir": "wp-content/vendor",
+        "secure-http": false
+    },
+    "require"     : {
+        "johnpbloch/wordpress": ">=4.8.1",
+        "johnpbloch/wordpress-core-installer": "*",
+        "wpackagist-plugin/backupwordpress": "*",
+        "roots/sage": "^8.5"
+    },
+    "require-dev" : {
+        "wpackagist-plugin/wcm-user-language-switcher": "*"
+    },
+    "extra"       : {
+        "wordpress-install-dir": "wp"
+    }
+}
